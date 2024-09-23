@@ -161,7 +161,7 @@ Evitamos duplicar información. Por ejemplo, si varios libros tienen el mismo au
 
 Cuando necesitas cambiar algo, como el nombre de un autor, solo lo modificas en un lugar (en el slice de autores), y eso se refleja automáticamente en todos los libros o usuarios que lo usen. No hace falta actualizar cada libro por separado.
 
-Tambien puedo decir que esta solucion tiene una desventaja, el acceso a los datos, ya que hay que hacer "busquedas" por id. Por eso se decidio usar el id como clave en los objetos ya que se acceden de manera mas rapida, "nombreDelObjeto[id]", si fuera un arreglo, tendria que recorrerlo hasta encontrar ese id. La estructura tambien depende de como vayamos a usar esos datos, si necesitamos acceder frecuentemente a esos datos, es una buena opcion tener el id como clave del objeto, pero si necesitamos tener el orden de los datos por alguna razon, un arreglo es una mejor solucion
+Tambien puedo decir que esta solucion tiene una desventaja, el acceso a los datos, ya que hay que hacer "busquedas" por id. Por eso se decidio usar el id como clave en los objetos ya que se acceden de manera mas rapida, "nombreDelObjeto[id]", si fuera un arreglo, tendria que recorrerlo hasta encontrar ese id. La estructura tambien va a depender de como necesitemos esos datos, si necesitamos acceder frecuentemente a esos datos, es una buena opcion tener el id como clave del objeto, pero si necesitamos tener el orden de los datos por alguna razon, un arreglo es una mejor solucion
 
 
 
