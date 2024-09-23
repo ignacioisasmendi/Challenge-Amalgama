@@ -35,7 +35,7 @@ const ContactCard: React.FC<{ contact: Contact }> = ({ contact }) => (
 );
 
 const NavBar: React.FC = () => (
-  <nav aria-label="Navegación principal">
+  <nav aria-label="navigation">
     <ul role="menubar">
       <li role="menuitem"><a href="/home">Home</a></li>
       <li role="menuitem"><a href="/contacts">My Contacts</a></li>

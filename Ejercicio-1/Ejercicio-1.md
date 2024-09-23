@@ -31,4 +31,4 @@
 
 #### 4) 
 
-Me parece una buena solucion crear una vista de perfil del contacto. Esto permite mantener una separación clara de responsabilidades y evitar mezclar lógicas diferentes en un solo componente. 
+Asumi que ContactProfile y ContactCard van a escalar en distintas direcciones a futuro. Pero, si desde un principio sabemos que son muy similares y no van a cambiar, puede ser más práctico combinarlos en un solo componente y pasar diferentes propiedades para manejar las diferencias de nombres de atributos. Sin embargo, si pienso que estos componentes podrían crecer de diferentes maneras en el futuro, hacer un solo componente podría complicar las cosas a largo plazo. A medida que se agreguen más funciones o cambien los requisitos, un componente grande podría volverse difícil de mantener y entender.

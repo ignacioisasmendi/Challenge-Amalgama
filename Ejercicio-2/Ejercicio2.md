@@ -1,10 +1,9 @@
 ### Ejercicio 2
 
-**1)**
+#### 1)
 
 Por una cuestion de simplicidad puse todo el codigo en un solo archivo
 
-####Javascript　
 
 ```javascript
 
@@ -95,7 +94,7 @@ export default App;
 
 ```
 
-**2)**
+#### 2)
 
 ```javascript
 {
@@ -150,15 +149,19 @@ export default App;
 ```
 
 
-**3)**
+#### 3)
 
 
-**Aclaracion**
+**Aclaracion** <br />
 Asumi que un libro solo puede estar escrito por un unico autor, si un libro puede estar escrito por uno o mas autores, seria una relacion N:N y deberia cambiar la estructura de lo planteado
 
-Al usar la normalización, evitamos duplicar información. Por ejemplo, si varios libros tienen el mismo autor, solo guardamos los datos del autor una vez y lo referenciamos con su authorId. Esto ahorra espacio y hace que los datos sean más ordenados. Lo mismo con los libros favoritos de los usuarios, solo guardamos el id del libro y la fecha en que se dio like a ese libro. 
+La estrategia que utilice tiene algunas ventajas, 
+
+Evitamos duplicar información. Por ejemplo, si varios libros tienen el mismo autor, solo guardamos los datos del autor una vez y lo referenciamos con su authorId. Esto ahorra espacio y hace que los datos sean más ordenados. Lo mismo con los libros favoritos de los usuarios, solo guardamos el id del libro y la fecha en que se dio like a ese libro. 
 
 Cuando necesitas cambiar algo, como el nombre de un autor, solo lo modificas en un lugar (en el slice de autores), y eso se refleja automáticamente en todos los libros o usuarios que lo usen. No hace falta actualizar cada libro por separado.
 
-Tambien puedo decir que esta solucion tiene una desventaja, el acceso a los datos, ya que hay que hacer "busquedas" por id. Por eso se decidio usar el id como clave en los objetos ya que se acceden de manera mas rapida, "nombreDelObjeto[id]", si fuera un arreglo, tendria que recorrerlo hasta encontrar ese id
+Tambien puedo decir que esta solucion tiene una desventaja, el acceso a los datos, ya que hay que hacer "busquedas" por id. Por eso se decidio usar el id como clave en los objetos ya que se acceden de manera mas rapida, "nombreDelObjeto[id]", si fuera un arreglo, tendria que recorrerlo hasta encontrar ese id. La estructura tambien depende de como vayamos a usar esos datos, si necesitamos acceder frecuentemente a esos datos, es una buena opcion tener el id como clave del objeto, pero si necesitamos tener el orden de los datos por alguna razon, un arreglo es una mejor solucion
+
+
 
