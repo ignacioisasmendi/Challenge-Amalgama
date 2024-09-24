@@ -30,5 +30,4 @@
 - Incorporacion de atributos aria-label, role y alt, mejorando la accesibilidad y cumpliendo con los estándares web. 
 
 #### 4) 
-
-Asumi que ContactProfile y ContactCard van a escalar en distintas direcciones a futuro. Pero, si desde un principio sabemos que son muy similares y no van a cambiar, puede ser más práctico combinarlos en un solo componente y pasar diferentes propiedades para manejar las diferencias de nombres de atributos. Sin embargo, si pienso que estos componentes podrían crecer de diferentes maneras en el futuro, hacer un solo componente podría complicar las cosas a largo plazo. A medida que se agreguen más funciones o cambien los requisitos, un componente grande podría volverse difícil de mantener y entender.
+Hice un nuevo componente porque me parecia un componente sencillo y que no valia la pena utilizar el patron Compound Components. Si necesitaria mas flexibilidad para controlar cómo se renderizan varias partes de un componente, lo hubiera utilizado. Por ejemplo, si en alguno de los components ContactProfile y ContactCard no quisiera mostrar el mail o el phone_number. En este  caso, como el propósito es simplemente mostrar la misma información de un contacto con un par de diferencias en los atributos, no sería necesario complicarlo con el patrón Compound Components.
